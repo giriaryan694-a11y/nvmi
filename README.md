@@ -119,6 +119,37 @@ While 100% prevention is impossible, NVMI employs several layers of defense:
 - **Run NVMI in an isolated environment** (container, VM, or restricted user account) when processing untrusted content.
 - **Monitor logs** for unusual tool invocation patterns.
 
+### 🚧 Security Status
+
+NVMI is an experimental project under active development.
+
+While some safeguards are implemented, NVMI should not currently be considered a fully sandboxed or hardened execution environment.
+
+At present, advanced security mechanisms such as capability-based permissions, granular security levels, command approval workflows, and stronger execution isolation are still planned features and have not yet been fully implemented.
+
+#### Recommended Usage
+
+For now, it is strongly recommended to run NVMI inside:
+
+* Docker containers
+* Virtual machines (VMs)
+* Dedicated testing environments
+* Non-production systems
+
+Avoid granting access to sensitive files, production infrastructure, privileged accounts, or important personal data.
+
+#### Planned Security Improvements
+
+* Safe / Medium / Research security levels
+* Per-tool permission controls
+* Command approval workflows
+* Improved execution isolation
+* Enhanced prompt injection mitigations
+* Docker-first deployment options
+
+Due to ongoing academic commitments and limited development time, these improvements are being implemented gradually.
+
+
 ---
 
 ## 📦 Installation
